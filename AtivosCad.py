@@ -405,7 +405,6 @@ class Apllication():
             'Ivy Mode Regular', 9))
         self.label_dataSaida.place(relx=0.4335, rely=0.12)
         
-
 # TREEVIEW
     def colunaNb2(self):
         # FRAME PARA COLUMAS
@@ -417,18 +416,21 @@ class Apllication():
     # colunas
 
         self.colunaNb2 = ttk.Treeview(self.frameNb2, height=4, column=(
-            "col1", "col2", "col3", "col4", "col5", "col6", "col7", "col8", "col9"))
+            "col1", "col2", "col3", "col4", "col5", "col6", "col7", "col8", "col9", "col10", "col11", "col12"))
         self.colunaNb2.heading("#0", text="")
-        self.colunaNb2.heading("#1", text="Tombo/Serie")
-        self.colunaNb2.heading("#2", text="Hostname")
-        self.colunaNb2.heading("#3", text="S.O")
-        self.colunaNb2.heading("#4", text="Setor")
-        self.colunaNb2.heading("#5", text="Tecnico")
-        self.colunaNb2.heading("#6", text="Descrição")
-        self.colunaNb2.heading("#7", text="Acessorios")
-        self.colunaNb2.heading("#8", text="Fornecedor")
-        self.colunaNb2.heading("#9", text="Usuario")
-
+        self.colunaNb2.heading("#1", text="Ing. Dominio")
+        self.colunaNb2.heading("#2", text="Inst. S.O")
+        self.colunaNb2.heading("#3", text="S.Operac")
+        self.colunaNb2.heading("#4", text="Atual. S.O")
+        self.colunaNb2.heading("#5", text="Set. Usuário")
+        self.colunaNb2.heading("#6", text="Un. Destino")
+        self.colunaNb2.heading("#7", text="Hostname")
+        self.colunaNb2.heading("#8", text="Usr. Admin")
+        self.colunaNb2.heading("#9", text="Sen. Admin")
+        self.colunaNb2.heading("#10", text="Exp. Senha")
+        self.colunaNb2.heading("#11", text="Usr.Setor")
+        self.colunaNb2.heading("#12", text="Data Saida")
+        
         self.colunaNb2.column("#0", width=1)
         self.colunaNb2.column("#1", width=8)
         self.colunaNb2.column("#2", width=12)
@@ -439,6 +441,9 @@ class Apllication():
         self.colunaNb2.column("#7", width=30)
         self.colunaNb2.column("#8", width=30)
         self.colunaNb2.column("#9", width=15)
+        self.colunaNb2.column("#10", width=15)
+        self.colunaNb2.column("#11", width=15)
+        self.colunaNb2.column("#12", width=15)
 
         self.colunaNb2.place(relx=0.005, rely=0.02,
                              relwidth=0.975, relheight=0.95)
